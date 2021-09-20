@@ -46,4 +46,24 @@ class Contact < ApplicationRecord
   validates :first_name, :last_name, :email, presence: true
   validates :ages, numericality: true
   validates :email, email: uniquneess: true
+
+  #allow nil 
+  #allow blank
+  #message
+  # on - only run on a acttion 
+  # Call back is to trigger code when an event is run
+# before_validation 
+#after_validation 
+#before_sabe
+#after_save
+#before_create
+#after_create
+# around_save
+# around_create
+
+# all logic that has to do with the data will be in the model 
+  #fat model  -  all logic should be in the model 
+  #skinny controllers
+  #controllers are hadling actions 
+  # actions - functions CRUD actions, events you can do functionally in th application
 end
